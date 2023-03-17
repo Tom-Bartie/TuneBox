@@ -41,8 +41,8 @@ This project was built using maven. To run back end code, run `mvn spring-boot:r
 Follow the following steps:
 
 1.	Set up your development environment: Install and configure the necessary software and tools for both Angular and Spring Boot development. This includes installing Node.js, Angular CLI, and a Java IDE such as vs code.
-2.	Implement your backend RESTful API: Use Spring MVC to create RESTful endpoints for creating, updating, and retrieving reviews from the database.
-3.	Implement your Angular front-end: Create an Angular project using the Angular CLI. Use Angular services to make HTTP requests to the Spring Boot API for creating and retrieving reviews.
-4.	Create your review form and review display component: Use Angular templates and components to create a form for submitting reviews and a display component for showing reviews.
-5.	Test and debug your application: Write test cases using JUnit for the Spring Boot API and Karma for the Angular application. 
-6.	Deploy the application: Deploy your Angular app to a web server or hosting service, and deploy your Spring Boot app to a server or cloud platform like AWS or Azure.
+2.	Implement the backend RESTful API: Use Spring MVC to create RESTful endpoints for creating, updating, and retrieving reviews from the database.
+3.	Implement the Angular front-end: Create an Angular project using the Angular CLI. Use Angular services to make HTTP requests to the Spring Boot API for creating and retrieving reviews.
+4.	Create the review form and review display component: Use Angular templates and components to create a form for submitting reviews and a display component for showing reviews.
+5.	Testing and debuging: Write test cases using JUnit for the Spring Boot API and Karma for the Angular application. 
+6.	Deploy the application: Deploy the Angular app to a web server or hosting service, and deploy the Boot app to a server or cloud platform like AWS or Azure.

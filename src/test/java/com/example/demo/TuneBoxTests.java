@@ -4,10 +4,12 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class TuneBoxTests {
 
+	// Write test cases here for backend
 	@Test
-	void contextLoads() {
+	void renameLater() {
+
 	}
 
 }

@@ -34,7 +34,7 @@ The backend uses Spring Boot. Make sure you are running java version 14.0.2 or l
 
 ## How to run back-end
 
-This project was built using [maven](https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.1.0/maven-wrapper-3.1.0.jar). To run back end code, run `mvn spring-boot:run`. To run test cases, run `mvn test`.
+This project was built using maven. To run back end code, run `mvn spring-boot:run`. To run test cases, run `mvn test`.
 
 ## *Note For Developers*
 

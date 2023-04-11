@@ -1,0 +1,111 @@
+  /* HEADER */
+  header#main-header {
+    height: 72px;
+    background: rgb(20,24,28);
+  }
+  
+  header#main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header#main-header .container > strong {
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(109,160,255,1) 0%, rgba(0,212,255,1) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size:40px;
+  }
+  
+  
+  header#main-header .actions {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  header#main-header .actions {
+    font-size: 13px
+  }
+  
+  header#main-header .actions .user-action {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-left: 700px;
+    color: rgb(183, 219, 219);
+  
+  }
+
+  header#main-header .actions .user-action img:first-child {
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  header#main-header .actions .user-action img:last-child {
+    height: 16px;
+  }
+  
+  header#main-header .actions > strong {
+    margin-left: 20px;
+    color: rgb(183, 219, 219);
+  }
+  header#main-header .actions .user-action > strong:hover{
+    color: white;
+    cursor: pointer;
+  }
+  
+  header#main-header .actions > strong:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .search-form {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 2px;
+    border-radius: 3px;
+    margin-left: 5px;
+    width: 110px;
+    height: 25px
+  }
+  
+  .search-form label {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .search-form input[type="text"] {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  
+  .search-form input[type="text"]:focus {
+    outline: none;
+  }
+  
+  #button {
+    border: none;
+  background-color: #6e97c2;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+    
+  }
+  
+  #button:hover {
+    background-color: #0062cc;
+  }
+  

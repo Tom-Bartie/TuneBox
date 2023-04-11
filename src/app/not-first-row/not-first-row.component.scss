@@ -1,0 +1,117 @@
+section.new {
+    margin-bottom: 50px;
+  }
+  
+  section.new header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(66,82,99);
+    padding-bottom: 3px;
+  }
+  
+  section.new header > span {
+    font-size: 13px;
+  }
+  
+  section.new header > span:hover {
+    color: rgb(64,188,244);
+    cursor: pointer;
+  }
+  
+  section.new header div {
+    display: flex;
+  }
+  
+  section.new header div img {
+    height: 15px;
+    margin-right: 3px;
+  }
+  
+  section.new header div span {
+    font-size: 11px;
+  }
+  
+  section.new header div:hover {
+    color: rgb(64,188,244);
+    cursor: pointer;
+  }
+  
+  
+  
+  section.new .card-list {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  section.new .card-block {
+    width: 155px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+  }
+  
+  section.new .card {
+    border: 1px solid rgb(99,116,133);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  section.new .card::after {
+    content: '';
+    border: 2px solid none;
+    border-radius: 5px;
+    top: -2px;
+    left: -2px;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s;
+  }
+  
+  section.new .card:hover::after {
+    content: '';
+    border: 2px solid rgb(0,224,84);
+    border-radius: 5px;
+    top: -2px;
+    left: -2px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  section.new .card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  section.new .card footer {
+    background: rgb(68,85,102);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  section.new .card footer img {
+    height: 20px;
+    width: 20px;
+    flex: 0;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  section.new .card footer span {
+    font-size: 12px;
+    color: rgb(150,167,184);
+    font-weight: bold;
+  }
+  
+  section.new .card-block > span {
+    font-size: 12px;
+    text-align: end;
+    letter-spacing: 0px;
+    color: rgb(85,102,119);
+    margin: 5px 0;
+  }

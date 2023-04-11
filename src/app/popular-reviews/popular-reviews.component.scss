@@ -1,0 +1,239 @@
+section.reviews {
+    margin-bottom: 50px;
+  }
+  
+  section.reviews > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(66,82,99);
+    padding-bottom: 3px;
+  }
+  
+  section.reviews > header > span {
+    font-size: 13px;
+  }
+  
+  section.reviews > header > span:hover {
+    color: rgb(64,188,244);
+    cursor: pointer;
+  }
+  
+  section.reviews > header div {
+    display: flex;
+  }
+  
+  section.reviews > header div img {
+    height: 15px;
+    margin-right: 3px;
+  }
+  
+  section.reviews > header div span {
+    font-size: 11px;
+  }
+  
+  section.reviews > header div:hover {
+    color: rgb(64,188,244);
+    cursor: pointer;
+  }
+  
+  
+  
+  section.reviews .review-list {
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 455px);
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+    padding-bottom: 30px;
+    align-items: start;
+  }
+  
+  section.reviews .review-list article {
+    align-self: start;
+    justify-self: start;
+    
+  }
+  
+  section.reviews .review-list header {
+    display: flex;
+    align-items: center;
+  }
+  
+  section.reviews .review-list header .poster {
+    width: 80px;
+    height: 120px;
+    position: relative;
+  }
+  
+  section.reviews .review-list header .poster::after {
+    content: '';
+    border: 2px solid none;
+    border-radius: 5px;
+    top: -2px;
+    left: -2px;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s;
+  }
+  
+  section.reviews .review-list header .poster:hover::after {
+    content: '';
+    border: 2px solid rgb(0,224,84);
+    border-radius: 5px;
+    top: -2px;
+    left: -2px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  section.reviews .review-list header .poster img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(99,116,133);
+    position: relative;
+  }
+  
+  section.reviews .review-list header .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  section.reviews .review-list header .info .author {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  section.reviews .review-list header .info .author img {
+    height: 24px;
+    width: 24px;
+    border: 1px solid rgb(99,116,133);
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  section.reviews .review-list header .info .author span {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  section.reviews .review-list header .info h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #fff;
+    margin: 10px 0;
+    transition: 0.1s
+  }
+  
+  section.reviews .review-list header .info h2:hover {
+    color: rgb(64,188,244);
+    cursor: pointer;
+  }
+  
+  section.reviews .review-list header .info h2 span {
+    color: rgb(99,116,133);
+    font-weight: normal;
+    margin-left: 5px;
+  }
+  
+  section.reviews .review-list header .info .movie {
+    display: flex;
+    align-items: center;
+  }
+  
+  section.reviews .review-list header .info .movie .rating img {
+    height: 14px;
+    margin: 0 -3px;
+  }
+  
+  section.reviews .review-list header .info .movie .comments {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  } 
+  
+  section.reviews .review-list header .info .movie .comments:hover {
+    color: rgb(64,188,244);
+    cursor: pointer;
+  }
+  
+  section.reviews .review-list header .info .movie .comments img {
+    height: 16px;
+    margin-right: 3px;
+  }
+  
+  section.reviews .review-list header .info .movie .comments span {
+    font-size: 14px;
+    letter-spacing: -1px;
+  }
+  
+  section.reviews .review-list .review-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 25px 0;
+  }
+  
+  section.reviews .review-list .review-body p {
+    margin-bottom: 10px;
+  }
+  
+  section.reviews .review-list .review-body p strong {
+    font-weight: normal;
+    color: #fff
+  }
+  
+  section.reviews .review-list .review-body p strong:hover {
+    color: rgb(64,188,244); 
+    cursor: pointer;
+  } 
+  
+  
+  
+  section.reviews .review-list footer {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(50, 57, 65);
+    padding-bottom: 25px;
+  }
+  
+  section.reviews .review-list footer .like {
+    display: flex;
+    align-items: center;
+  }
+  
+  section.reviews .review-list footer .like:hover {
+    color: rgb(169, 177, 185);
+    cursor: pointer;
+  }
+  
+  section.reviews .review-list footer .like img {
+    height: 20px;
+  }
+  
+  section.reviews .review-list footer .like strong {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  
+  section.reviews .review-list footer .like button {
+    width: 20px;
+    height: 20px;
+    background-color: #4497b1;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  section.reviews .review-list footer span {
+    font-size: 13px;
+    margin-left: 5px;;
+  }
+  

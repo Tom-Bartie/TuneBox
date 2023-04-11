@@ -1,0 +1,79 @@
+section.popular {
+    padding-top:50px;
+    margin-bottom: 50px;
+  }
+  
+  section.popular header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(66,82,99);
+    padding-bottom: 3px;
+  }
+  
+  section.popular header > span {
+    font-size: 13px;
+    font-family: sans-serif;
+  }
+  
+  section.popular header > span:hover {
+    color: rgb(64,188,244);
+    cursor: pointer;
+  }
+  
+  section.popular header div {
+    display: flex;
+  }
+  
+  section.popular header div img {
+    height: 15px;
+    margin-right: 3px;
+  }
+  
+  section.popular header div span {
+    font-size: 11px;
+  }
+  
+  section.popular header div:hover {
+    color: rgb(64,188,244);
+    cursor: pointer;
+  }
+  
+  section.popular .card-list {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  section.popular .card {
+    width: 155px;
+    margin: 0 5px;
+    border: 1px solid rgb(99,116,133);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  section.popular .card::after {
+    content: '';
+    border: 2px solid none;
+    border-radius: 5px;
+    top: -2px;
+    left: -2px;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s;
+  }
+  
+  section.popular .card:hover::after {
+    content: '';
+    border: 2px solid rgb(99,116,133);
+    color: rgb(64,188,244);
+    border-radius: 5px;
+    top: -2px;
+    left: -2px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+  }

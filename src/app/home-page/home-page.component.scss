@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, button {
+    font-family: sans-serif;
+  }
+
+  body {
+    background: #22303f ;
+    color: rgb(135,150,164);
+    letter-spacing: 1px;;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 950px;
+    margin: auto;
+    height: 100%;
+  }

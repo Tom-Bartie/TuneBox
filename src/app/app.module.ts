@@ -8,6 +8,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { PopularReviewsComponent } from './popular-reviews/popular-reviews.component';
 import { FirstRowComponent } from './first-row/first-row.component';
 import { NotFirstRowComponent } from './not-first-row/not-first-row.component';
+import { TopRatedAlbumSectionComponent } from './top-rated-album-section/top-rated-album-section.component';
+import { TopRatedListsComponent } from './top-rated-lists/top-rated-lists.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NotFirstRowComponent } from './not-first-row/not-first-row.component';
     NavigationBarComponent,
     PopularReviewsComponent,
     FirstRowComponent,
-    NotFirstRowComponent
+    NotFirstRowComponent,
+    TopRatedAlbumSectionComponent,
+    TopRatedListsComponent
   ],
   imports: [
     BrowserModule,

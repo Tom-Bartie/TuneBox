@@ -10,6 +10,7 @@ import { FirstRowComponent } from './first-row/first-row.component';
 import { NotFirstRowComponent } from './not-first-row/not-first-row.component';
 import { TopRatedAlbumSectionComponent } from './top-rated-album-section/top-rated-album-section.component';
 import { TopRatedListsComponent } from './top-rated-lists/top-rated-lists.component';
+import { AlbumPageComponent } from './album-page/album-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TopRatedListsComponent } from './top-rated-lists/top-rated-lists.compon
     FirstRowComponent,
     NotFirstRowComponent,
     TopRatedAlbumSectionComponent,
-    TopRatedListsComponent
+    TopRatedListsComponent,
+    AlbumPageComponent
   ],
   imports: [
     BrowserModule,

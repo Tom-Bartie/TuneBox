@@ -37,8 +37,6 @@ section.new {
     cursor: pointer;
   }
   
-  
-  
   section.new .card-list {
     margin-top: 10px;
     display: flex;
@@ -79,12 +77,13 @@ section.new {
     height: 100%;
     width: 100%;
     cursor: pointer;
-    position: absolute;
+    position: relative;
   }
   
   section.new .card img {
     width: 100%;
     border-radius: 5px;
+    cursor: pointer;
   }
   
   section.new .card footer {

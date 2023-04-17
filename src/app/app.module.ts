@@ -11,6 +11,14 @@ import { NotFirstRowComponent } from './not-first-row/not-first-row.component';
 import { TopRatedAlbumSectionComponent } from './top-rated-album-section/top-rated-album-section.component';
 import { TopRatedListsComponent } from './top-rated-lists/top-rated-lists.component';
 import { AlbumPageComponent } from './album-page/album-page.component';
+import { RouterModule, Routes } from '@angular/router';
+
+
+const appRoute: Routes = [
+  {path: '', redirectTo: 'Home', pathMatch: 'full'},
+  {path: 'Home', component: HomePageComponent},
+  {path: 'AlbumPage', component: AlbumPageComponent},
+]
 
 @NgModule({
   declarations: [
@@ -26,7 +34,7 @@ import { AlbumPageComponent } from './album-page/album-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot(appRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]

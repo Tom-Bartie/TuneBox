@@ -1,4 +1,5 @@
 import { Component,Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-rated-album-section',
@@ -7,4 +8,10 @@ import { Component,Input } from '@angular/core';
 })
 export class TopRatedAlbumSectionComponent {
   @Input() rowName!: string;
+
+  constructor(private route: Router){ }
+
+  navigateToAlbumPage(){
+    this.route.navigate(['AlbumPage'])
+  }
 }

@@ -12,4 +12,8 @@ export class NavigationBarComponent {
   navigateToHome(){
     this.route.navigate(['Home'])
   }
+
+  navigateToProfilePage(){
+    this.route.navigate(['ProfilePage'])
+  }
 }

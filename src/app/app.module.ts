@@ -12,12 +12,14 @@ import { TopRatedAlbumSectionComponent } from './top-rated-album-section/top-rat
 import { TopRatedListsComponent } from './top-rated-lists/top-rated-lists.component';
 import { AlbumPageComponent } from './album-page/album-page.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 
 const appRoute: Routes = [
   {path: '', redirectTo: 'Home', pathMatch: 'full'},
   {path: 'Home', component: HomePageComponent},
   {path: 'AlbumPage', component: AlbumPageComponent},
+  {path: 'ProfilePage', component: ProfilePageComponent},
 ]
 
 @NgModule({
@@ -30,7 +32,8 @@ const appRoute: Routes = [
     NotFirstRowComponent,
     TopRatedAlbumSectionComponent,
     TopRatedListsComponent,
-    AlbumPageComponent
+    AlbumPageComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,

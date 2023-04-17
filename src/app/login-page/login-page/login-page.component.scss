@@ -1,0 +1,97 @@
+/*
+  
+  
+  <app-navigation-bar></app-navigation-bar>
+  <body>
+    <main class="container">
+    <br>
+    <br>
+    <div class="login">
+        <form id = "login-form">
+            <label> <b> Username </b></label>
+            <input type="text">
+            <br>
+            <br>
+            <label> <b> Password </b></label>
+            <input type="text">
+            <br>
+            <br>
+            <a routerLink="/app/app-home-page" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <input type="button" name="log" id="log" value="Log in">
+            </a>
+        </form>
+    </div>
+  
+  
+  
+  
+  */
+
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #22303f ;
+    min-height: 100vh;
+}
+
+.login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        background-color: #22303f ;
+        border-radius: 15px ;
+
+}
+h2{
+    text-align: center;
+    color: rgb(183, 219, 219);
+    background: rgb(20,24,28);
+    padding: 20px;
+}
+label{
+    color:rgb(135,150,164);
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+    justify-content: center;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+} //<input type="button" name="log" id="log" value= "Login">
+a{
+    float: left;
+    background-color: grey;
+    text-align: center;
+}
+
+
+
+  

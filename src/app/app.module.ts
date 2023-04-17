@@ -13,13 +13,14 @@ import { TopRatedListsComponent } from './top-rated-lists/top-rated-lists.compon
 import { AlbumPageComponent } from './album-page/album-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
-
+import { LoginPageComponent } from './login-page/login-page/login-page.component';
 
 const appRoute: Routes = [
-  {path: '', redirectTo: 'Home', pathMatch: 'full'},
+  {path: '', redirectTo: 'Login', pathMatch: 'full'}, //changed redirect to Home
   {path: 'Home', component: HomePageComponent},
   {path: 'AlbumPage', component: AlbumPageComponent},
   {path: 'ProfilePage', component: ProfilePageComponent},
+  {path: 'Login', component: LoginPageComponent},
 ]
 
 @NgModule({
@@ -33,7 +34,8 @@ const appRoute: Routes = [
     TopRatedAlbumSectionComponent,
     TopRatedListsComponent,
     AlbumPageComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,

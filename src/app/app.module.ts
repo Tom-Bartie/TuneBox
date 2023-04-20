@@ -23,6 +23,7 @@ import { MaggieComponent } from './maggie/maggie.component';
 import { WeekndComponent } from './weeknd/weeknd.component';
 import { DrakeComponent } from './drake/drake.component';
 import { MacComponent } from './mac/mac.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 const appRoute: Routes = [
   {path: '', redirectTo: 'Login', pathMatch: 'full'}, //changed redirect to Home
@@ -62,7 +63,8 @@ const appRoute: Routes = [
     MaggieComponent,
     WeekndComponent,
     DrakeComponent,
-    MacComponent
+    MacComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,

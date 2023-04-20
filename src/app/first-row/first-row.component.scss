@@ -52,6 +52,7 @@ section.popular {
     display: flex;
     flex-direction: column;
     position: relative;
+    cursor: pointer;
   }
   
   section.popular .card::after {
@@ -75,5 +76,5 @@ section.popular {
     height: 100%;
     width: 100%;
     cursor: pointer;
-    position: absolute;
+    position: relative;
   }

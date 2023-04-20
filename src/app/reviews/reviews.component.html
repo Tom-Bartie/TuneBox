@@ -1,0 +1,85 @@
+<ul *ngIf="type == 'profile'; else album" class="reviews">
+    <li *ngFor="let review of reviews">
+        <div class="row">    
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="textColor">
+                            {{review.album}} <br>
+                            {{review.artist}}
+                        </div>
+                        <hr />
+                        <span class="textColor">
+                            {{review.content}}
+                        </span>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="interactions">
+                                <span class="textColor">{{review.likes}} Likes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <br />
+    </li>
+</ul>
+
+<ng-template #album>
+    <ul class="reviews">
+        <div class="col-md-12">
+            <div class="card" >
+              <div class="card-header fc-card-header" style=" color: rgb(183, 219, 219);">Create Review</div>
+              <div class="row">                
+                <div class="col-md-10">
+                  <form id="review">
+                    <textarea #rev
+                    class="form-control"
+                    placeholder="What's on your mind?"
+                    form="review"
+                ></textarea>
+                </form>
+                </div>
+                <button type="button" (click)="addReview(rev.value)">
+                  <label>Create Review</label>
+              </button>
+              </div>
+            </div>
+        </div>
+        <br />
+        <li *ngFor="let review of reviews">
+            <div *ngIf="review.album == type">
+                <div class="row">    
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="textColor">
+                                    {{review.album}} <br>
+                                    {{review.artist}}
+                                </div>
+                                <hr />
+                                <span class="textColor">
+                                    {{review.content}}
+                                </span>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="interactions">
+                                        <span class="textColor">{{review.likes}} Likes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        </li>
+    </ul> 
+</ng-template>

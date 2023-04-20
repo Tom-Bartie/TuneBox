@@ -57,6 +57,7 @@ section.new {
     display: flex;
     flex-direction: column;
     position: relative;
+    cursor: pointer;
   }
   
   section.new .card::after {
@@ -79,7 +80,7 @@ section.new {
     height: 100%;
     width: 100%;
     cursor: pointer;
-    position: absolute;
+    position: relative;
   }
   
   section.new .card img {

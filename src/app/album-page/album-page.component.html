@@ -71,26 +71,7 @@
         <div class="col-md-6">
           <br />
           
-            <div class="col-md-12">
-              <div class="card" >
-                <div class="card-header fc-card-header" style=" color: rgb(183, 219, 219);">Create Review</div>
-                <div class="row">                
-                  <div class="col-md-10">
-                    <form id="review">  
-                      <textarea
-                      class="form-control"
-                      placeholder="What's on your mind?"
-                      form="review"
-                    ></textarea>
-                  </form>
-                  </div>
-                  <button class="button">
-                    <label>Create Review</label>
-                </button>
-                </div>
-              </div>
-            </div>
-          <br />
+            <app-reviews [type]="type" [curArtist]="artist"></app-reviews>
             <div class="row">
             <div class="col-md-12">
               <div class="card">
@@ -109,16 +90,8 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="interactions">
-                      <span class="textColor">1 share 13 thousand views</span>
+                      <span class="textColor">0 Likes</span>
                     </div>
-                  </div>
-                </div>
-                <hr />
-                <div class="row" >
-                  <div class="col-md-3">
-                      <button class="button">
-                        <label>Like</label>
-                    </button>
                   </div>
                 </div>
                 <br />
@@ -145,16 +118,8 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="interactions">
-                      <span class="textColor">1 share 13 thousand views</span>
+                      <span class="textColor">0 Likes</span>
                     </div>
-                  </div>
-                </div>
-                <hr />
-                <div class="row" >
-                  <div class="col-md-3">
-                      <button class="button">
-                        <label>Like</label>
-                    </button>
                   </div>
                 </div>
                 <br />

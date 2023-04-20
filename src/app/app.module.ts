@@ -14,6 +14,7 @@ import { AlbumPageComponent } from './album-page/album-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { LoginPageComponent } from './login-page/login-page/login-page.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 
 const appRoute: Routes = [
   {path: '', redirectTo: 'Login', pathMatch: 'full'}, //changed redirect to Home
@@ -35,7 +36,8 @@ const appRoute: Routes = [
     TopRatedListsComponent,
     AlbumPageComponent,
     ProfilePageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,

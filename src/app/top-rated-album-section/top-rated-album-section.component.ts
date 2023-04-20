@@ -14,4 +14,13 @@ export class TopRatedAlbumSectionComponent {
   navigateToAlbumPage(){
     this.route.navigate(['AlbumPage'])
   }
+ navigateToWutang(){
+    this.route.navigate(['Wutang'])
+  }
+  navigateToJoji(){
+    this.route.navigate(['Joji'])
+  }
+  navigateToJoey(){
+    this.route.navigate(['Joey'])
+  }
 }

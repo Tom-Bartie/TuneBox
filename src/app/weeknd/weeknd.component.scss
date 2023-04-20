@@ -1,0 +1,63 @@
+body{
+    background-color: #1d2129;
+    color: #1d2129;
+}
+.button {
+    border: none;
+    background-color: #6e97c2;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-left:12px;
+    font-size: 14px;
+    cursor: pointer;
+    }
+ 
+.album-cover-img {
+  display: block;
+  height: 315px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+.album-img img {
+  bottom: 15px;
+  box-shadow: none;
+  display: block;
+  left: 15px;
+  padding: 1px;
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  z-index: 9;
+}
+.albumName {
+  display:flex ;
+  justify-content:center
+}
+.albumArtist{
+  display:flex ;
+  justify-content:center
+}
+.card{
+  padding-left: 2px;
+  padding-top:2px;
+  padding-right:2px; 
+  background-color: #495263;
+}
+.tracklistHeader{
+  color: rgb(183, 219, 219);
+  text-align: center;
+}
+.interactions{
+  text-align: right;
+  margin-right: 24px;
+}
+.textColor{
+  color: rgb(183, 219, 219);
+}
+
+.container{
+  border-bottom: 3px solid rgb(66,82,99);
+  padding-bottom: 3px;
+}

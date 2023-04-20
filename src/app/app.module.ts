@@ -14,6 +14,15 @@ import { AlbumPageComponent } from './album-page/album-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { LoginPageComponent } from './login-page/login-page/login-page.component';
+import { MydarktwistedComponent } from './mydarktwisted/mydarktwisted.component';
+import { WutangComponent } from './wutang/wutang.component';
+import { JojiComponent } from './joji/joji.component';
+import { JoeyComponent } from './joey/joey.component';
+import { DomFikeComponent } from './dom-fike/dom-fike.component';
+import { MaggieComponent } from './maggie/maggie.component';
+import { WeekndComponent } from './weeknd/weeknd.component';
+import { DrakeComponent } from './drake/drake.component';
+import { MacComponent } from './mac/mac.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 
 const appRoute: Routes = [
@@ -22,6 +31,15 @@ const appRoute: Routes = [
   {path: 'AlbumPage', component: AlbumPageComponent},
   {path: 'ProfilePage', component: ProfilePageComponent},
   {path: 'Login', component: LoginPageComponent},
+  {path: 'Kanye', component: MydarktwistedComponent},
+  {path: 'Wutang', component: WutangComponent},
+  {path: 'Joji', component:JojiComponent},
+  {path: 'Joey', component: JoeyComponent},
+  {path: 'DomFike', component:DomFikeComponent},
+  {path: 'Maggie', component:MaggieComponent},
+  {path: 'Week', component:WeekndComponent},
+  {path: 'Drake', component:DrakeComponent},
+  {path: 'Mac', component: MacComponent},
 ]
 
 @NgModule({
@@ -37,6 +55,15 @@ const appRoute: Routes = [
     AlbumPageComponent,
     ProfilePageComponent,
     LoginPageComponent,
+    MydarktwistedComponent,
+    WutangComponent,
+    JojiComponent,
+    JoeyComponent,
+    DomFikeComponent,
+    MaggieComponent,
+    WeekndComponent,
+    DrakeComponent,
+    MacComponent,
     ReviewsComponent
   ],
   imports: [

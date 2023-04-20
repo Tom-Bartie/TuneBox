@@ -5,12 +5,12 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.model.User;
+import com.example.demo.model.Album;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface AlbumRepository extends JpaRepository<Album, Long> {
 
-    void deleteUserByID(Long id);
+    void deleteAlbumByID(Long id);
 
-    Optional findUserByID(Long id);
+    Optional<Album> findAlbumByID(Long id);
 }

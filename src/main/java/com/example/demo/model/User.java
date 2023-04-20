@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import java.io.Serializable;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,7 +10,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "users")
-public class User {
+public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,15 +19,17 @@ public class User {
     private String userName;
     private String password;
     private String email;
+    private String userCode;
 
     public User() {
 
     }
 
-    public User(String userName, String password, String email) {
+    public User(String userName, String password, String email, String userCode) {
         this.email = email;
         this.password = password;
         this.userName = userName;
+        this.userCode = userCode;
     }
 
     public String getUserName() {
@@ -50,5 +54,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getUserCode() {
+        return userCode;
+    }
+
+    public void setUserCode(String userCode) {
+        this.userCode = userCode;
     }
 }

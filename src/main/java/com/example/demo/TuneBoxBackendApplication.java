@@ -14,7 +14,7 @@ import com.example.demo.repository.UserRepository;
  * 
 */
 @SpringBootApplication
-public class TuneBoxBackendApplication implements CommandLineRunner {
+public class TuneBoxBackendApplication  {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TuneBoxBackendApplication.class, args);
@@ -26,12 +26,12 @@ public class TuneBoxBackendApplication implements CommandLineRunner {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-	@Override
+	/*@Override
 	public void run(String... args) throws Exception {
 		// this.userRepository.save(new User("tom-bartie", "password123",
 		// "tjb141@pitt.edu"));
 		String sql = "INSERT INTO PROFILE (UserID, UserName, Password, Email) VALUES ('1','tom-bartie', 'password123', 'tjb141@pitt.edu')";
 		int rows = jdbcTemplate.update(sql);
 	}
-
+	*/
 }

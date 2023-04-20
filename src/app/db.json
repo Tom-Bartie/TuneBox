@@ -1,0 +1,27 @@
+{
+  "signupUsersList": [
+    {
+      "id": 1,
+      "userName": "davidS",
+      "password": "pass",
+      "email": "dbs29@pitt.edu"
+    },
+    {
+      "userName": "tomB",
+      "password": "pass",
+      "email": "tjb141@pitt.edu"
+    },
+    {
+      "userName": "ffff",
+      "password": "ffff",
+      "email": "fffff",
+      "id": 2
+    },
+    {
+      "userName": "test1",
+      "password": "testpass",
+      "email": "dbsimpjr@gmail.com",
+      "id": 3
+    }
+  ]
+}

@@ -24,6 +24,9 @@ import { WeekndComponent } from './weeknd/weeknd.component';
 import { DrakeComponent } from './drake/drake.component';
 import { MacComponent } from './mac/mac.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { RegistrationPageComponent } from './registration-page/registration-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoute: Routes = [
   {path: '', redirectTo: 'Login', pathMatch: 'full'}, //changed redirect to Home
@@ -40,6 +43,7 @@ const appRoute: Routes = [
   {path: 'Week', component:WeekndComponent},
   {path: 'Drake', component:DrakeComponent},
   {path: 'Mac', component: MacComponent},
+  {path: 'Register', component: RegistrationPageComponent}
 ]
 
 @NgModule({
@@ -64,11 +68,14 @@ const appRoute: Routes = [
     WeekndComponent,
     DrakeComponent,
     MacComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    RegistrationPageComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoute)
+    RouterModule.forRoot(appRoute), 
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

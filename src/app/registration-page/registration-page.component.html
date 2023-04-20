@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>TUNEBOX REGISTRATION</h2><br>
+    <div class="login">
+    <form [formGroup]="signUpForm" (ngSubmit)="signUp()" id="login" method="post" action="login.php">
+        <label><b>Username
+        </b>
+        </label>
+        <input formControlName="userName" type="text" name="Uname" id="Uname" placeholder="Username" >
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input formControlName="password" type="password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+        <label><b>Email
+        </b>
+        </label>
+        <input formControlName="email" type="email" name="Email" id="email" placeholder="Email">
+        <br><br>
+        <button  >Submit</button>
+    </form>
+</div>
+</body>
+</html>
+

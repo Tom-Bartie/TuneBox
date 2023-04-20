@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.model.User;
+import com.example.demo.registration.RegistrationService;
 import com.example.demo.repository.UserRepository;
 
 @RestController
@@ -27,5 +28,23 @@ public class UserController {
     @PostMapping("/users")
     void addUser(@RequestBody User user) {
         userRepository.save(user);
+    }
+
+    @Autowired
+    private RegistrationService service;
+
+    @PostMapping("/register")
+    public User registerUser(@RequestBody User user) throws Exception {
+        String tempEmail = user.getEmail();
+        if(tempEmail != null && !"".equals(tempEmail)){
+            User userobj = service.fetchUserByEmail(tempEmail);
+            if(userobj != null){
+                throw new Exception("There already exists a user with this email!");
+            }
+        }
+        User userObj = null;
+        userObj = service.saveUser(user);
+        return userObj;
+        
     }
 }

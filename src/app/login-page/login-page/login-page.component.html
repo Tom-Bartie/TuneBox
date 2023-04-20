@@ -5,23 +5,26 @@
 <body>
     <h2>TUNEBOX LOGIN</h2><br>
     <div class="login">
-    <form id="login" method="get" action="login.php">
+    <form [formGroup]="loginForm" (ngSubmit)="login()" id="login" method="get" action="login.php">
         <label><b>Username
         </b>
         </label>
-        <input type="text" name="Uname" id="Uname" placeholder="Username">
+        <input formControlName="userName" type="text" name="Uname" id="Uname" placeholder="Username">
         <br><br>
         <label><b>Password
         </b>
         </label>
-        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <input formControlName="password" type="password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+        <button>Login</button>
         <br><br>
         <a (click)="navigateToHomePage()" class="button" name="log" id="log"> Login </a>
         <br><br>
-        <a (click)="navigateToHomePage()" class="button" name="log" id="log"> Register </a>
+        <a (click)="navigateToRegistrationPage()" class="button" name="log" id="log"> Register </a>
         <br><br>
        
     </form>
 </div>
 </body>
 </html>
+
